@@ -1,60 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="한가지 사이트를 다양한 프레임워크를 통해 만들어 보는 포트폴리오 사이트입니다."/>
-    <meta name="keyword" content="포트폴리오, 리액트, 뷰, 넥스트, 웹스토리보이, portfolio, react.js, vue.js, next.js, webstoryboy" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="한가지 사이트를 다양한 프레임워크를 통해 만들어 보는 포트폴리오 사이트입니다."
+    />
+    <meta
+      name="keyword"
+      content="포트폴리오, 리액트, 뷰, 넥스트, 웹스토리보이, portfolio, react.js, vue.js, next.js, webstoryboy"
+    />
     <title>포트폴리오 사이트 만들기 Vite-Site</title>
 
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
     <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div id="skip">
-        <a href="#header">헤더 영역 바로가기</a>
-        <a href="#intro">소개 영역 바로가기</a>
-        <a href="#skill">스킬 영역 바로가기</a>
-        <a href="#site">사이트 영역 바로가기</a>
-        <a href="#port">포트폴리오 영역 바로가기</a>
-        <a href="#contact">연락처 영역 바로가기</a>
-        <a href="#footer">푸터 영역 바로가기</a>
-
-
+      <a href="#header">헤더 영역 바로가기</a>
+      <a href="#intro">소개 영역 바로가기</a>
+      <a href="#skill">스킬 영역 바로가기</a>
+      <a href="#site">사이트 영역 바로가기</a>
+      <a href="#port">포트폴리오 영역 바로가기</a>
+      <a href="#contact">연락처 영역 바로가기</a>
+      <a href="#footer">푸터 영역 바로가기</a>
     </div>
-    <header id="header">
-        header
+    <header id="header" role="banner">
+      <div class="header_inner">
+        <div class="header_logo">
+          <h1>
+            <a href="#">portfolio<em>vite</em></a>
+          </h1>
+        </div>
+        <nav class="header_nav">
+          <ul>
+            <li><a href="#intro">intro</a></li>
+            <li><a href="#skill">skill</a></li>
+            <li><a href="#site">site</a></li>
+            <li><a href="#port">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+        <div
+          class="header_nav_mobile"
+          id="headerToggle"
+          aria-controls="primary-mrnu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <span></span>
+        </div>
+      </div>
     </header>
 
+    <main id="main" role="main">
+      <section id="intro">intro</section>
 
-    <main id="main">
-        <section id="intro">
-            intro
-        </section>
+      <section id="skill">skill</section>
 
-        <section id="skill">
-            skill
-        </section>
+      <section id="site">site</section>
 
-        <section id="site">
-            site
-        </section>
+      <section id="port">port</section>
 
-        <section id="port">
-            port
-        </section>
-
-        <section id="contact">
-            contact
-        </section>
+      <section id="contact">contact</section>
     </main>
 
-
-    <footer id="footer">
-        footer
-    </footer>
-
+    <footer id="footer" role="contentinfo">footer</footer>
 
     <script type="module" src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
