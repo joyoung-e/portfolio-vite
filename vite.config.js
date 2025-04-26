@@ -1,9 +1,6 @@
-import { defineConfig } from "vite";
-
-export default defineConfig({
-  base: "/portfolio-vite/",
+export default {
   root: "src",
   build: {
     outDir: "../public",
   },
-});
+};
