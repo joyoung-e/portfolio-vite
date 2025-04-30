@@ -10,7 +10,7 @@
   flex-direction: column;
 }
 .contact_title {
-  font-size: 10vw;
+  font-size: 9vw;
   text-transform: uppercase;
   line-height: 1;
   font-weight: 800;
@@ -41,7 +41,6 @@
   transition: all 0.3s;
   cursor: all-scroll;
 }
-
 .contact_lines .line {
   width: 100%;
   background-color: var(--black);
